@@ -32,7 +32,7 @@ body {
   color: white;
   font-size: 4.7rem;
   text-align: center;
-  margin-top: 30%;
+  margin-top: 20rem;
   text-shadow: 3px 3px 2rem green;
   /* ANIMATION */
   animation-name: christmas_lighting_an;
@@ -41,6 +41,7 @@ body {
   animation-direction: alternate;
   animation-timing-function: linear;
   animation-delay: 0.3s;
+  transition: font-size 1s;
 }
 
 .countdown-container {
@@ -54,4 +55,20 @@ body {
   color: white;
   margin: 0.2rem 0.5rem 0.2rem 0.5rem;
   font-size: 2.6rem;
+  transition: font-size 1s;
+}
+
+@media screen and (max-width: 900px) {
+  #title {
+    font-size: 3rem;
+  }
+  .countdown-container > p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .countdown-container > p {
+    font-size: 1.3rem;
+  }
 }
